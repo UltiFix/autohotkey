@@ -8,6 +8,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #Include %A_ScriptDir%\2digiPartSearch.ahk
 #Include %A_ScriptDir%\3killWindow.ahk
 #Include %A_ScriptDir%\4lightDarkModeChange.ahk
+#Include %A_ScriptDir%\5mouserPartSearch.ahk
 #Include %A_ScriptDir%\6pastePlainText.ahk
 #Include %A_ScriptDir%\7octoPartSearch.ahk
 
@@ -37,6 +38,13 @@ return
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ^!+l:: ; Control + Alt + Shift + L
     lightDarkModeChange()
+return
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Define the hotkey for mouserPartSearch functionality
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+^!m:: ; control + alt + m
+    mouserPartSearch()
 return
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
